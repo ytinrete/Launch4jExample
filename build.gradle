@@ -1,0 +1,33 @@
+group 'Launch4jExample'
+version '1.0'
+
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://plugins.gradle.org/m2/'
+        }
+    }
+    dependencies {
+        classpath 'gradle.plugin.edu.sc.seis.gradle:launch4j:1.6.1'
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+
+apply plugin: 'java'
+apply plugin: 'edu.sc.seis.launch4j'
+
+
+//mainClassName = 'com.ytinrete.window.MainWindow'
+
+
+launch4j {
+    mainClassName = 'com.ytinrete.lauch4jexample.MainWindow'
+    icon = projectDir.absolutePath + '/icons/icon.ico'
+    bundledJrePath = "jre"
+}
