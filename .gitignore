@@ -1,0 +1,8 @@
+#IntelliJ IDEA
+.DS_Store
+.idea
+.gradle
+*.iml
+*.ipr
+*.iws
+out
