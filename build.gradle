@@ -23,7 +23,15 @@ apply plugin: 'java'
 apply plugin: 'edu.sc.seis.launch4j'
 
 
-//mainClassName = 'com.ytinrete.window.MainWindow'
+dependencies {
+    compile files("libs/JarClass.jar")
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.ytinrete.lauch4jexample.MainWindow'
+    }
+}
 
 
 launch4j {
