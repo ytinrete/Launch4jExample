@@ -2,9 +2,6 @@ package com.ytinrete.lauch4jexample;
 
 import javax.swing.*;
 
-/**
- * Created by lirui on 16/2/15.
- */
 public class MainWindow extends JFrame {
 
   public static void main(String args[]){
@@ -13,7 +10,7 @@ public class MainWindow extends JFrame {
 
   MainWindow(){
 
-    this.add(new JLabel("  Hello world!"));
+    this.add(new JLabel(JarClass.getTestMsg()));
 
     this.setSize(200, 100);
 
